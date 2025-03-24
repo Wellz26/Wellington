@@ -71,11 +71,11 @@
   </style>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
 
   <!-- NAVBAR -->
   <header class="sticky top-0 bg-black shadow-md z-50">
-    <nav class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+    <nav class="flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4 max-w-7xl mx-auto">
       <h1 class="text-blue text-2xl font-bold">Wellington M.</h1>
       <ul class="hidden md:flex space-x-8 text-gray-300 text-lg">
         <li><a href="#about" class="hover:text-blue">About</a></li>
@@ -84,18 +84,19 @@
         <li><a href="#projects" class="hover:text-blue">Projects</a></li>
         <li><a href="#contact" class="hover:text-blue">Contact</a></li>
       </ul>
+      <!-- Mobile Menu Icon (Optional future expansion) -->
     </nav>
   </header>
 
   <!-- HERO SECTION -->
   <section class="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-black to-blue-900 text-white px-4 text-center">
     <div class="animate__animated animate__fadeInDown">
-      <img src="wellz.JPG" alt="Wellington Mukahiwa" class="rounded-full w-44 h-44 object-cover border-4 border-blue mb-6 shadow-lg">
+      <img src="wellz.jpg" alt="Wellington Mukahiwa" class="rounded-full w-40 sm:w-44 md:w-52 h-40 sm:h-44 md:h-52 object-cover border-4 border-blue mb-6 shadow-lg">
     </div>
-    <h1 class="text-5xl md:text-6xl font-bold animate__animated animate__fadeInUp">Wellington Mukahiwa</h1>
-    <p class="text-xl mt-4 animate__animated animate__fadeInUp animate__delay-1s">Cybersecurity Specialist | Web Developer | Digital Branding Expert</p>
-    <div class="mt-8 animate__animated animate__fadeInUp animate__delay-2s">
-      <a href="mailto:mukahiwawellington@gmail.com" class="btn-blue mr-4">📧 Contact Me</a>
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold animate__animated animate__fadeInUp">Wellington Mukahiwa</h1>
+    <p class="text-lg sm:text-xl mt-4 animate__animated animate__fadeInUp animate__delay-1s">Cybersecurity Specialist | Web Developer | Digital Branding Expert</p>
+    <div class="mt-8 animate__animated animate__fadeInUp animate__delay-2s flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+      <a href="mailto:mukahiwawellington@gmail.com" class="btn-blue">📧 Contact Me</a>
       <a href="https://www.linkedin.com/in/wellington-mukahiwa-443071304/" target="_blank" class="btn-blue">🔗 LinkedIn</a>
     </div>
   </section>
@@ -103,9 +104,9 @@
   <div class="gradient-divider"></div>
 
   <!-- ABOUT ME -->
-  <section id="about" class="py-20 px-8 bg-black text-center">
-    <h2 class="text-4xl text-blue font-bold mb-10 animate__animated animate__fadeInUp">About Me</h2>
-    <div class="max-w-4xl mx-auto text-lg leading-relaxed animate__animated animate__fadeInUp animate__delay-1s text-gray-300">
+  <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-black text-center">
+    <h2 class="text-3xl sm:text-4xl text-blue font-bold mb-10 animate__animated animate__fadeInUp">About Me</h2>
+    <div class="max-w-4xl mx-auto text-base sm:text-lg leading-relaxed animate__animated animate__fadeInUp animate__delay-1s text-gray-300">
       <p>
         I'm a Cybersecurity major at Walsh University with a passion for securing digital spaces and helping businesses scale their online presence. I combine technical skills in IT security and web development with digital branding strategies that drive results. Whether it's protecting data or crafting sleek, functional websites—I've got it covered.
       </p>
@@ -115,38 +116,38 @@
   <div class="gradient-divider"></div>
 
   <!-- SKILLS SECTION -->
-  <section id="skills" class="py-20 px-8 bg-gradient-to-r from-black to-blue-900 text-white text-center">
-    <h2 class="text-4xl font-bold mb-12 animate__animated animate__fadeInUp">Skills & Expertise</h2>
-    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
-      <div class="glass-card p-8">Cybersecurity & IT Security</div>
-      <div class="glass-card p-8">Website Creation & Hosting</div>
-      <div class="glass-card p-8">SEO & Digital Marketing</div>
-      <div class="glass-card p-8">Cloud Security & Threat Analysis</div>
-      <div class="glass-card p-8">WordPress & Web Publishing</div>
-      <div class="glass-card p-8">Business Development & Branding</div>
+  <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black to-blue-900 text-white text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-12 animate__animated animate__fadeInUp">Skills & Expertise</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+      <div class="glass-card p-6 md:p-8">Cybersecurity & IT Security</div>
+      <div class="glass-card p-6 md:p-8">Website Creation & Hosting</div>
+      <div class="glass-card p-6 md:p-8">SEO & Digital Marketing</div>
+      <div class="glass-card p-6 md:p-8">Cloud Security & Threat Analysis</div>
+      <div class="glass-card p-6 md:p-8">WordPress & Web Publishing</div>
+      <div class="glass-card p-6 md:p-8">Business Development & Branding</div>
     </div>
   </section>
 
   <div class="gradient-divider"></div>
 
   <!-- EXPERIENCE -->
-  <section id="experience" class="py-20 px-8 bg-black text-center">
-    <h2 class="text-4xl text-blue font-bold mb-12 animate__animated animate__fadeInUp">Experience</h2>
+  <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 bg-black text-center">
+    <h2 class="text-3xl sm:text-4xl text-blue font-bold mb-12 animate__animated animate__fadeInUp">Experience</h2>
     <div class="max-w-6xl mx-auto space-y-12 text-left">
-      <div class="glass-card p-8">
-        <h3 class="text-2xl text-blue font-bold mb-2">Digital Business Dev. & Cybersecurity Consultant</h3>
-        <p class="text-lg mb-4 text-gray-400">Kontrol Tekniks International | 2015 – Present</p>
-        <ul class="list-disc ml-6 text-lg text-gray-300 space-y-2">
+      <div class="glass-card p-6 md:p-8">
+        <h3 class="text-xl sm:text-2xl text-blue font-bold mb-2">Digital Business Dev. & Cybersecurity Consultant</h3>
+        <p class="text-sm sm:text-lg mb-4 text-gray-400">Kontrol Tekniks International | 2015 – Present</p>
+        <ul class="list-disc ml-4 sm:ml-6 text-sm sm:text-lg text-gray-300 space-y-2">
           <li>Developed & optimized websites with SEO to boost visibility.</li>
           <li>Implemented cybersecurity measures to protect client data.</li>
           <li>Led branding efforts with professional designs and social content.</li>
         </ul>
       </div>
 
-      <div class="glass-card p-8">
-        <h3 class="text-2xl text-blue font-bold mb-2">PHP & Database Developer</h3>
-        <p class="text-lg mb-4 text-gray-400">CATHY_FLORIST Project | Jan 2024 – Present</p>
-        <ul class="list-disc ml-6 text-lg text-gray-300 space-y-2">
+      <div class="glass-card p-6 md:p-8">
+        <h3 class="text-xl sm:text-2xl text-blue font-bold mb-2">PHP & Database Developer</h3>
+        <p class="text-sm sm:text-lg mb-4 text-gray-400">CATHY_FLORIST Project | Jan 2024 – Present</p>
+        <ul class="list-disc ml-4 sm:ml-6 text-sm sm:text-lg text-gray-300 space-y-2">
           <li>Developed PHP-based database system for customer management.</li>
           <li>Improved backend security and streamlined user workflows.</li>
         </ul>
@@ -157,23 +158,23 @@
   <div class="gradient-divider"></div>
 
   <!-- PROJECTS -->
-  <section id="projects" class="py-20 px-8 bg-gradient-to-r from-black to-blue-900 text-white text-center">
-    <h2 class="text-4xl font-bold mb-12 animate__animated animate__fadeInUp">Projects & Accomplishments</h2>
-    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div class="glass-card p-8">
-        <h3 class="text-xl font-bold mb-4">Multiple Website Builds</h3>
+  <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black to-blue-900 text-white text-center">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-12 animate__animated animate__fadeInUp">Projects & Accomplishments</h2>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+      <div class="glass-card p-6 md:p-8">
+        <h3 class="text-lg sm:text-xl font-bold mb-4">Multiple Website Builds</h3>
         <p>Developed secure and optimized websites with improved SEO and responsive design.</p>
       </div>
-      <div class="glass-card p-8">
-        <h3 class="text-xl font-bold mb-4">Cybersecurity Awareness Campaign</h3>
+      <div class="glass-card p-6 md:p-8">
+        <h3 class="text-lg sm:text-xl font-bold mb-4">Cybersecurity Awareness Campaign</h3>
         <p>Led phishing prevention training and implemented robust password security practices.</p>
       </div>
-      <div class="glass-card p-8">
-        <h3 class="text-xl font-bold mb-4">Credit War Room Course</h3>
+      <div class="glass-card p-6 md:p-8">
+        <h3 class="text-lg sm:text-xl font-bold mb-4">Credit War Room Course</h3>
         <p>Designed educational content focused on credit building and financial repair strategies.</p>
       </div>
-      <div class="glass-card p-8">
-        <h3 class="text-xl font-bold mb-4">Branding & Digital Marketing</h3>
+      <div class="glass-card p-6 md:p-8">
+        <h3 class="text-lg sm:text-xl font-bold mb-4">Branding & Digital Marketing</h3>
         <p>Increased client engagement through strategic content creation and digital ads.</p>
       </div>
     </div>
@@ -182,24 +183,24 @@
   <div class="gradient-divider"></div>
 
   <!-- CONTACT ME -->
-  <section id="contact" class="py-20 px-8 bg-black text-center">
-    <h2 class="text-4xl text-blue font-bold mb-6 animate__animated animate__fadeInUp">Let's Connect!</h2>
-    <p class="text-lg text-gray-300 mb-10 animate__animated animate__fadeInUp animate__delay-1s">
+  <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-black text-center">
+    <h2 class="text-3xl sm:text-4xl text-blue font-bold mb-6 animate__animated animate__fadeInUp">Let's Connect!</h2>
+    <p class="text-base sm:text-lg text-gray-300 mb-10 animate__animated animate__fadeInUp animate__delay-1s">
       Ready to secure your digital space or build your brand? Let's collaborate!
     </p>
 
-    <a href="mailto:mukahiwawellington@gmail.com" class="btn-blue text-xl inline-block animate__animated animate__pulse animate__infinite">
+    <a href="mailto:mukahiwawellington@gmail.com" class="btn-blue text-base sm:text-xl inline-block animate__animated animate__pulse animate__infinite">
       📧 Send Email
     </a>
 
     <div class="flex justify-center space-x-8 mt-12 animate__animated animate__fadeInUp animate__delay-2s">
-      <a href="https://www.linkedin.com/in/wellington-mukahiwa-443071304/" target="_blank" class="text-blue text-lg hover:text-gray-400 transition">LinkedIn</a>
-      <a href="mailto:mukahiwawellington@gmail.com" target="_blank" class="text-blue text-lg hover:text-gray-400 transition">Email</a>
+      <a href="https://www.linkedin.com/in/wellington-mukahiwa-443071304/" target="_blank" class="text-blue text-sm sm:text-lg hover:text-gray-400 transition">LinkedIn</a>
+      <a href="mailto:mukahiwawellington@gmail.com" target="_blank" class="text-blue text-sm sm:text-lg hover:text-gray-400 transition">Email</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-black text-gray-500 text-center py-6 text-sm">
+  <footer class="bg-black text-gray-500 text-center py-6 text-xs sm:text-sm">
     &copy; 2024 Wellington Mukahiwa. All Rights Reserved.
   </footer>
 
