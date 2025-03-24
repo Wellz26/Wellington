@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wellington Mukahiwa | Cybersecurity Portfolio</title>
+  <title>Wellington Mukahiwa | Cybersecurity Specialist</title>
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -25,12 +25,19 @@
       font-family: 'Roboto Slab', serif;
     }
 
-    .bg-blue {
-      background-color: #007BFF;
+    .btn-blue {
+      background-color: #00BFFF;
+      color: #fff;
+      padding: 1rem 2.5rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      transition: all 0.3s ease;
     }
 
-    .text-blue {
-      color: #00BFFF;
+    .btn-blue:hover {
+      background-color: #007BFF;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     .glass-card {
@@ -44,22 +51,6 @@
     .glass-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
-    }
-
-    .btn-blue {
-      background-color: #00BFFF;
-      color: #fff;
-      padding: 1rem 2.5rem;
-      border-radius: 9999px;
-      font-weight: 700;
-      font-size: 1.125rem;
-      transition: all 0.3s ease;
-    }
-
-    .btn-blue:hover {
-      background-color: #007BFF;
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     .gradient-divider {
@@ -76,26 +67,24 @@
   <!-- NAVBAR -->
   <header class="sticky top-0 bg-black shadow-md z-50">
     <nav class="flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4 max-w-7xl mx-auto">
-      <h1 class="text-blue text-2xl font-bold">Wellington M.</h1>
+      <h1 class="text-blue text-2xl font-bold">Wellington Mukahiwa</h1>
       <ul class="hidden md:flex space-x-8 text-gray-300 text-lg">
         <li><a href="#about" class="hover:text-blue">About</a></li>
         <li><a href="#skills" class="hover:text-blue">Skills</a></li>
         <li><a href="#experience" class="hover:text-blue">Experience</a></li>
         <li><a href="#projects" class="hover:text-blue">Projects</a></li>
+        <li><a href="#education" class="hover:text-blue">Education</a></li>
         <li><a href="#contact" class="hover:text-blue">Contact</a></li>
       </ul>
-      <!-- Mobile Menu Icon (Optional future expansion) -->
     </nav>
   </header>
 
   <!-- HERO SECTION -->
-  <section class="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-black to-blue-900 text-white px-4 text-center">
-    <div class="animate__animated animate__fadeInDown">
-      <img src="wellz.JPG" alt="Wellington Mukahiwa" class="rounded-full w-40 sm:w-44 md:w-52 h-40 sm:h-44 md:h-52 object-cover border-4 border-blue mb-6 shadow-lg">
-    </div>
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold animate__animated animate__fadeInUp">Wellington Mukahiwa</h1>
-    <p class="text-lg sm:text-xl mt-4 animate__animated animate__fadeInUp animate__delay-1s">Cybersecurity Specialist | Web Developer | Digital Branding Expert</p>
-    <div class="mt-8 animate__animated animate__fadeInUp animate__delay-2s flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+  <section class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-black to-blue-900 text-center px-4">
+    <img src="wellz.JPG" alt="Wellington Mukahiwa" class="rounded-full w-40 sm:w-44 md:w-52 h-40 sm:h-44 md:h-52 object-cover border-4 border-blue mb-6 shadow-lg">
+    <h1 class="text-4xl md:text-6xl font-bold text-white">Wellington Mukahiwa</h1>
+    <p class="text-lg sm:text-xl mt-4 text-gray-300">Cybersecurity Specialist | Web Developer | Digital Branding Expert</p>
+    <div class="mt-8 flex flex-col sm:flex-row gap-4">
       <a href="mailto:mukahiwawellington@gmail.com" class="btn-blue">📧 Contact Me</a>
       <a href="https://www.linkedin.com/in/wellington-mukahiwa-443071304/" target="_blank" class="btn-blue">🔗 LinkedIn</a>
     </div>
@@ -103,53 +92,82 @@
 
   <div class="gradient-divider"></div>
 
-  <!-- ABOUT ME -->
-  <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-black text-center">
-    <h2 class="text-3xl sm:text-4xl text-blue font-bold mb-10 animate__animated animate__fadeInUp">About Me</h2>
-    <div class="max-w-4xl mx-auto text-base sm:text-lg leading-relaxed animate__animated animate__fadeInUp animate__delay-1s text-gray-300">
+  <!-- ABOUT -->
+  <section id="about" class="py-20 px-4 bg-black text-center">
+    <h2 class="text-4xl text-blue font-bold mb-10">Professional Summary</h2>
+    <div class="max-w-4xl mx-auto text-gray-300 text-lg">
       <p>
-        I'm a Cybersecurity major at Walsh University with a passion for securing digital spaces and helping businesses scale their online presence. I combine technical skills in IT security and web development with digital branding strategies that drive results. Whether it's protecting data or crafting sleek, functional websites—I've got it covered.
+        Detail-oriented and highly skilled Cybersecurity major at Walsh University with a strong foundation in IT security, system protection, web development, and business development strategies. Proven expertise in securing networks, optimizing business visibility online, and crafting engaging digital content.
       </p>
     </div>
   </section>
 
   <div class="gradient-divider"></div>
 
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black to-blue-900 text-white text-center">
-    <h2 class="text-3xl sm:text-4xl font-bold mb-12 animate__animated animate__fadeInUp">Skills & Expertise</h2>
-    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-      <div class="glass-card p-6 md:p-8">Cybersecurity & IT Security</div>
-      <div class="glass-card p-6 md:p-8">Website Creation & Hosting</div>
-      <div class="glass-card p-6 md:p-8">SEO & Digital Marketing</div>
-      <div class="glass-card p-6 md:p-8">Cloud Security & Threat Analysis</div>
-      <div class="glass-card p-6 md:p-8">WordPress & Web Publishing</div>
-      <div class="glass-card p-6 md:p-8">Business Development & Branding</div>
+  <!-- SKILLS -->
+  <section id="skills" class="py-20 px-4 bg-gradient-to-r from-black to-blue-900 text-center text-white">
+    <h2 class="text-4xl font-bold mb-12">Skills & Expertise</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="glass-card p-6">
+        <h3 class="text-xl font-bold mb-4">Cybersecurity & IT Security</h3>
+        <ul class="text-left space-y-2 text-gray-300">
+          <li>Cloud Security & Password Management</li>
+          <li>Phishing & Threat Analysis</li>
+          <li>Access & Security Management</li>
+          <li>Cyber Policies & Compliance</li>
+        </ul>
+      </div>
+      <div class="glass-card p-6">
+        <h3 class="text-xl font-bold mb-4">Web Development & SEO</h3>
+        <ul class="text-left space-y-2 text-gray-300">
+          <li>Website Creation & Hosting</li>
+          <li>HTML, PHP, CSS, SQL</li>
+          <li>WordPress Development</li>
+          <li>SEO Optimization & Digital Marketing</li>
+        </ul>
+      </div>
+      <div class="glass-card p-6">
+        <h3 class="text-xl font-bold mb-4">Business & Digital Branding</h3>
+        <ul class="text-left space-y-2 text-gray-300">
+          <li>Strategic Content Development</li>
+          <li>Business Development & Networking</li>
+          <li>Social Media Management & Growth</li>
+          <li>Graphic Design & Branding</li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <div class="gradient-divider"></div>
 
   <!-- EXPERIENCE -->
-  <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 bg-black text-center">
-    <h2 class="text-3xl sm:text-4xl text-blue font-bold mb-12 animate__animated animate__fadeInUp">Experience</h2>
-    <div class="max-w-6xl mx-auto space-y-12 text-left">
-      <div class="glass-card p-6 md:p-8">
-        <h3 class="text-xl sm:text-2xl text-blue font-bold mb-2">Digital Business Dev. & Cybersecurity Consultant</h3>
-        <p class="text-sm sm:text-lg mb-4 text-gray-400">Kontrol Tekniks International | 2015 – Present</p>
-        <ul class="list-disc ml-4 sm:ml-6 text-sm sm:text-lg text-gray-300 space-y-2">
-          <li>Developed & optimized websites with SEO to boost visibility.</li>
+  <section id="experience" class="py-20 px-4 bg-black text-center">
+    <h2 class="text-4xl text-blue font-bold mb-12">Professional Experience</h2>
+    <div class="max-w-5xl mx-auto space-y-12 text-left">
+      <div class="glass-card p-6">
+        <h3 class="text-2xl text-blue font-bold mb-2">Digital Business Development & Cybersecurity Consultant</h3>
+        <p class="text-gray-400 mb-4">Kontrol Tekniks International | Feb 2015 – Present</p>
+        <ul class="list-disc pl-6 text-gray-300 space-y-2">
+          <li>Developed and optimized websites with a focus on SEO strategies.</li>
           <li>Implemented cybersecurity measures to protect client data.</li>
-          <li>Led branding efforts with professional designs and social content.</li>
+          <li>Managed digital content strategy, increasing brand awareness.</li>
         </ul>
       </div>
-
-      <div class="glass-card p-6 md:p-8">
-        <h3 class="text-xl sm:text-2xl text-blue font-bold mb-2">PHP & Database Developer</h3>
-        <p class="text-sm sm:text-lg mb-4 text-gray-400">CATHY_FLORIST Project | Jan 2024 – Present</p>
-        <ul class="list-disc ml-4 sm:ml-6 text-sm sm:text-lg text-gray-300 space-y-2">
-          <li>Developed PHP-based database system for customer management.</li>
-          <li>Improved backend security and streamlined user workflows.</li>
+      <div class="glass-card p-6">
+        <h3 class="text-2xl text-blue font-bold mb-2">IT & Business Consultant</h3>
+        <p class="text-gray-400 mb-4">Kontrol Tekniks Zimbabwe | Feb 2015 – Present</p>
+        <ul class="list-disc pl-6 text-gray-300 space-y-2">
+          <li>Created digital business presence and Google Maps listings.</li>
+          <li>Developed project models using graphic design tools.</li>
+          <li>Provided technical consulting for IT infrastructure security.</li>
+        </ul>
+      </div>
+      <div class="glass-card p-6">
+        <h3 class="text-2xl text-blue font-bold mb-2">PHP & Database Management Developer</h3>
+        <p class="text-gray-400 mb-4">CATHY_FLORIST Project | Jan 2024 – Present</p>
+        <ul class="list-disc pl-6 text-gray-300 space-y-2">
+          <li>Developed PHP-based database management for customer handling.</li>
+          <li>Improved backend security and website optimization.</li>
         </ul>
       </div>
     </div>
@@ -158,53 +176,67 @@
   <div class="gradient-divider"></div>
 
   <!-- PROJECTS -->
-  <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black to-blue-900 text-white text-center">
-    <h2 class="text-3xl sm:text-4xl font-bold mb-12 animate__animated animate__fadeInUp">Projects & Accomplishments</h2>
-    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-      <div class="glass-card p-6 md:p-8">
-        <h3 class="text-lg sm:text-xl font-bold mb-4">Multiple Website Builds</h3>
-        <p>Developed secure and optimized websites with improved SEO and responsive design.</p>
+  <section id="projects" class="py-20 px-4 bg-gradient-to-r from-black to-blue-900 text-center text-white">
+    <h2 class="text-4xl font-bold mb-12">Projects & Accomplishments</h2>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="glass-card p-6">
+        <h3 class="text-xl font-bold mb-4">Multiple Website Developments</h3>
+        <p>Secured & SEO-optimized websites for enhanced business visibility.</p>
       </div>
-      <div class="glass-card p-6 md:p-8">
-        <h3 class="text-lg sm:text-xl font-bold mb-4">Cybersecurity Awareness Campaign</h3>
-        <p>Led phishing prevention training and implemented robust password security practices.</p>
+      <div class="glass-card p-6">
+        <h3 class="text-xl font-bold mb-4">Cybersecurity Awareness Campaign</h3>
+        <p>Conducted phishing prevention and password security training.</p>
       </div>
-      <div class="glass-card p-6 md:p-8">
-        <h3 class="text-lg sm:text-xl font-bold mb-4">Credit War Room Course</h3>
-        <p>Designed educational content focused on credit building and financial repair strategies.</p>
+      <div class="glass-card p-6">
+        <h3 class="text-xl font-bold mb-4">Branding & Digital Marketing</h3>
+        <p>Created engaging digital content to boost lead conversions.</p>
       </div>
-      <div class="glass-card p-6 md:p-8">
-        <h3 class="text-lg sm:text-xl font-bold mb-4">Branding & Digital Marketing</h3>
-        <p>Increased client engagement through strategic content creation and digital ads.</p>
+      <div class="glass-card p-6">
+        <h3 class="text-xl font-bold mb-4">Credit War Room</h3>
+        <p>Designed and developed a course on credit building and repair strategies.</p>
       </div>
     </div>
   </section>
 
   <div class="gradient-divider"></div>
 
-  <!-- CONTACT ME -->
-  <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-black text-center">
-    <h2 class="text-3xl sm:text-4xl text-blue font-bold mb-6 animate__animated animate__fadeInUp">Let's Connect!</h2>
-    <p class="text-base sm:text-lg text-gray-300 mb-10 animate__animated animate__fadeInUp animate__delay-1s">
-      Ready to secure your digital space or build your brand? Let's collaborate!
-    </p>
-
-    <a href="mailto:mukahiwawellington@gmail.com" class="btn-blue text-base sm:text-xl inline-block animate__animated animate__pulse animate__infinite">
-      📧 Send Email
-    </a>
-
-    <div class="flex justify-center space-x-8 mt-12 animate__animated animate__fadeInUp animate__delay-2s">
-      <a href="https://www.linkedin.com/in/wellington-mukahiwa-443071304/" target="_blank" class="text-blue text-sm sm:text-lg hover:text-gray-400 transition">LinkedIn</a>
-      <a href="mailto:mukahiwawellington@gmail.com" target="_blank" class="text-blue text-sm sm:text-lg hover:text-gray-400 transition">Email</a>
+  <!-- EDUCATION -->
+  <section id="education" class="py-20 px-4 bg-black text-center">
+    <h2 class="text-4xl text-blue font-bold mb-12">Education</h2>
+    <div class="max-w-4xl mx-auto space-y-8 text-left text-gray-300">
+      <div class="glass-card p-6">
+        <h3 class="text-2xl text-blue font-bold mb-2">Walsh University</h3>
+        <p>Bachelor of Arts in Cybersecurity (Expected Graduation: 2027)</p>
+        <p>GPA: 3.89</p>
+      </div>
+      <div class="glass-card p-6">
+        <h3 class="text-2xl text-blue font-bold mb-2">Notre Dame College</h3>
+        <p>Transferred Cybersecurity Program</p>
+        <p>GPA: 3.9</p>
+      </div>
+      <div class="glass-card p-6">
+        <h3 class="text-2xl text-blue font-bold mb-2">Riverton Academy – Zimbabwe</h3>
+        <p>Graduated 2022 | Coursework: Computer Science, IT Fundamentals, Mathematics</p>
+      </div>
     </div>
   </section>
 
+  <div class="gradient-divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 px-4 bg-black text-center">
+    <h2 class="text-4xl text-blue font-bold mb-6">Contact Me</h2>
+    <p class="text-lg text-gray-300 mb-10">Let's work together! Contact me below.</p>
+    <a href="mailto:mukahiwawellington@gmail.com" class="btn-blue text-xl inline-block animate__animated animate__pulse animate__infinite">📧 Send Email</a>
+  </section>
+
   <!-- FOOTER -->
-  <footer class="bg-black text-gray-500 text-center py-6 text-xs sm:text-sm">
+  <footer class="bg-black text-gray-500 text-center py-6 text-sm">
     &copy; 2024 Wellington Mukahiwa. All Rights Reserved.
   </footer>
 
 </body>
 </html>
+
 
 
